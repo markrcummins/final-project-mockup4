@@ -7,7 +7,12 @@ FlowRouter.route('/', {
     BlazeLayout.render('Landing_Page');
   },
 });
-
+FlowRouter.route('/login', {
+  name: 'Login_Page',
+  action() {
+    BlazeLayout.render('Login_Page');
+  },
+});
 FlowRouter.route('/list', {
   name: 'List_Stuff_Page',
   action() {

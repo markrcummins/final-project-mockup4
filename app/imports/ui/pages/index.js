@@ -4,6 +4,9 @@ import './add-stuff-page.js';
 import './landing-page.html';
 import './landing-page.js';
 
+import './login-page.html';
+import './login-page.js';
+
 import './edit-stuff-page.html';
 import './edit-stuff-page.js';
 
