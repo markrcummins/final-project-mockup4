@@ -1,0 +1,27 @@
+<template name="Make_Team_page">
+  <img class="ui fluid background-image" src="/images/multi.jpg"
+       style="z-index: -5; opacity: 0.4; position: absolute; display: block; width: 100vw; height: 100vh; object-fit: cover">
+  <div class="ui centered card-container">
+    {{#if Template.subscriptionsReady}}
+      <div class="ui four cards">
+        {{#each profile in profileList}}
+          <div class="ui centered raised card">
+            <div class="content">
+              <div class="header">{{profile.first}} {{profile.last}}</div>
+              <div class="description">
+                <p>Team: {{profile.team}}</p>
+                <p>Looking for: {{profile.looking}}</p>
+              </div>
+            </div>
+            <div class="ui teal bottom attached button">
+              <a class="{{ isActiveRoute 'Request_Contact'}} item" href="{{ pathFor 'Request_Contact' }}">Request Contact </a>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    {{else}}
+      {{> Loading}}
+    {{/if}}
+  </div>
+
+</template>

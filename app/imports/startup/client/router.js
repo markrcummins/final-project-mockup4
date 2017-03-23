@@ -13,10 +13,22 @@ FlowRouter.route('/login', {
     BlazeLayout.render('Login_Page');
   },
 });
-FlowRouter.route('/list', {
-  name: 'List_Stuff_Page',
+FlowRouter.route('/home', {
+  name: 'Home_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'List_Stuff_Page' });
+    BlazeLayout.render('App_Body', { main: 'Home_Page' });
+  },
+});
+FlowRouter.route('/make-teams', {
+  name: 'Make_Team_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Make_Team_Page' });
+  },
+});
+FlowRouter.route('/tournament', {
+  name: 'Tournament_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Tournament_Page' });
   },
 });
 
