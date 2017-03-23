@@ -1,6 +1,9 @@
 import './add-stuff-page.html';
 import './add-stuff-page.js';
 
+import './landing-page.html';
+import './landing-page.js';
+
 import './edit-stuff-page.html';
 import './edit-stuff-page.js';
 
